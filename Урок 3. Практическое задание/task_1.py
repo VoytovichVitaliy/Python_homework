@@ -18,13 +18,13 @@ Process finished with exit code 0
 Process finished with exit code 0
 """
 
-def my_func ():
+def my_func (f_arg, s_arg):
     try:
-        f_arg = int(input("Введите первое число: "))
-        s_arg = int(input("Введите второе число: "))
         div_arg = f_arg / s_arg
     except ZeroDivisionError:
         return "Вы что? Пытаетесь делить на 0!"
     return div_arg
 
-print(my_func())
+a = int(input("Введите первое число: "))
+b = int(input("Введите второе число: "))
+print(my_func(a, b))
